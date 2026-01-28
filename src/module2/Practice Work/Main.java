@@ -10,12 +10,8 @@ class Usermanager{
      public void removeUser(User user){
         userList.remove(user);
      }
-     public void printAllUsers() {
-        for (User user : userList) {
-            System.out.println(user);
-        }
     }
-   }
+
 
 class User{
     public int id;
@@ -34,12 +30,9 @@ class User{
         this.email = email;
     }
 
-    public int getId(){
-      return id;
-    }
 
     public String toString(){
-      return email + " " + role;
+      return email + " " + role + " " + id;
     }
 }
 
